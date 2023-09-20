@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Cinzel', serif;
+    color: aliceblue;
+    height: 100vh;
+    background: url(./assets/barbershop.jpeg) no-repeat center fixed;
+    background-size: cover;
+    backdrop-filter: blur(6px);
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 5rem;
+    padding-top: 50px;
+
+}
+
+.img-container {
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 70%;
+}
+
