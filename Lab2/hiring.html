@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Team</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body id="hiring">
+    <!-- Navbar -->
+    <a href="index.html">Home</a>
+    <a href="haircuts.html">Haircut Menu</a>
+    <a href="hiring.html">Join Our Team</a>
+    <h1 id="form header" class="form header">Join Our Team</h1>
+
+    <!-- Hiring Form -->
+    <form action="/sendData" method="post">
+        <label for="first-name">First Name:
+            <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+        </label> <br>
+
+        <label for="last-name">Last Name:
+            <input type="text" name="last_name" id="last-name" placeholder="Last Name" required>
+        </label> <br><br>
+        <label for="">Address 1:
+            <input type="text" name="address1" id="address1" placeholder="Street" required>
+        </label> <br>
+        <label for="">Address 2:
+            <input type="text" name="address1" id="address2" placeholder="Unit/Apt #">
+        </label> <br>
+        <label for="">City:
+            <input type="text" name="city" id="city" placeholder="City" required>
+        </label>
+        <label for="state">State:
+            <select name="state" id="state" required>
+                <optgroup label="States">
+                    <option value="TX">TX</option>
+                    <option value="CA">CA</option>
+                    <option value="FL">FL</option>
+                </optgroup>
+                <optgroup label="US Territory">
+                    <option value="PR">PR</option>
+                    <option value="GU">GU</option>
+                </optgroup>        
+            </select>
+        </label><br><br>
+        <label for="age">Age:
+            <input 
+                type="number" 
+                name="age" 
+                id="age" 
+                min="18" 
+                max="99" 
+                title="Must be at least 18 and younger than 99."
+                placeholder="18"
+            >
+        </label><br><br>
+        <label for="email">Email:
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+        </label> <br>
+        <label for="password">Password:
+            <input type="password" name="password" id="password" placeholder="Password" minlength="8" maxlength="15" required>
+        </label>
+         <br><br>
+
+        <label for="martial-status-answer">Martial Status: </label>
+        <input type="radio" name="martial-status-answer" id="married" value="Married">
+        <label for="married">Married</label>
+        <input type="radio" name="martial-status-answer" id="single" value="Single" checked>
+        <label for="single">Single</label>
+        <input type="radio" name="martial-status-answer" id="complicated" value="Complicated">
+        <label for="complicated">Complicated</label> <br>
+
+        <label for="favorite-color">Favorite Color: </label>
+       
+        <input type="checkbox" name="favorite-color" id="blue" value="Blue">
+        <label for="blue">Blue</label>
+        <input type="checkbox" name="favorite-color" id="red" value="Red">
+        <label for="red">Red</label>
+        <input type="checkbox" name="favorite-color" id="green" value="Green">
+        <label for="green">Green</label>
+        <input type="checkbox" name="favorite-color" id="Yellow" value="Yellow">
+        <label for="yellow">Yellow</label>
+        <input type="checkbox" name="favorite-color" id="Pink" value="Pink">
+        <label for="pink">Pink</label>
+        <br><br>
+
+        <label for="more-info">Enter more information about yourself (300 char max):</label> <br>
+        <textarea 
+            name="more-info" 
+            id="more-info" 
+            cols="30" 
+            rows="10"
+            maxlength="300"
+            placeholder="Type information here..."
+            style="resize: none; width: 400px;"
+        ></textarea> <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
