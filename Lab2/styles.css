@@ -2,15 +2,17 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: 'Cinzel', serif;
     color: #F1C376;
-    height: 100vh;
+    height: 110vh;
     background: url(./assets/barbershop.jpeg) no-repeat center fixed;
-    background-size: cover;
-    backdrop-filter: blur(6px);
+    background-size:cover;
+    backdrop-filter: blur(10px);
 }
+
 
 .navbar-brand {
     width: 80px;
@@ -26,7 +28,7 @@ body {
 }
 
 h1 {
-    font-size: 4.8rem;
+    font-size: 4.7rem;
 }
 
 h2 {
@@ -41,12 +43,13 @@ h1, h2 {
 }
 
 .img-container {
-    width: 100%;
+    width: 90%;
     text-align: center;
+    margin: auto;
 }
 
 img {
-    width: 50%;
+    width: 70%;
     transition: .6s;
 }
 
@@ -57,20 +60,66 @@ img:hover {
 .appointment-container {
     font-size: 1.3em;
     text-align: center;
-    margin: auto;
 }
 
 .btn {
     transition: .3s;
+    box-shadow: #F1c376 4px 4px 4px;
 }
 
 .btn:hover {
     transform: scale(1.1);
-    color: #F1C376;
+    
+    background-color: #F1C376;
 }
 
-table {
-    margin: auto;
-    margin-top: 50px;
+.table-container {
+    background-color: rgba(255, 255, 255, 0.299);
+    box-shadow: 8px 8px 8px ;
+    padding: 40px;
+    width: 90%;
+    margin: 25px auto;
+    border-radius: 10px;
 }
 
+.table {
+    text-align: center;
+    color: aliceblue;
+    font-family: sans-serif;
+    
+}
+
+
+
+
+.form-container {
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.299);
+    box-shadow: 8px 8px 8px ;
+    border-radius: 10px;
+    margin: 80px auto;
+    width: 85%;
+}
+
+textarea {
+    color: black;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form-buttons {
+    text-align: center;
+
+}
+
+.review {
+    padding-bottom: 100px;
+}
+
+.footer {
+    color: aliceblue;
+    padding: 30px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
