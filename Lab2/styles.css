@@ -1,4 +1,9 @@
+/* The color theme used on the app is to match the logo color palette */
+
+/* Google Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +11,7 @@
 }
 
 
+/* Body settings */
 
 body {
     font-family: 'Cinzel', serif;
@@ -16,7 +22,7 @@ body {
     backdrop-filter: blur(10px);
 }
 
-
+/* Navbar settings */
 .navbar-brand {
     width: 50px;
 }
@@ -29,6 +35,8 @@ body {
     transform: scale(1.1);
     color: #F1C376;
 }
+
+/* Header and sub-header settings */
 
 h1 {
     font-size: 4.5rem;
@@ -60,12 +68,14 @@ img:hover {
     transform: scale(1.08);
 }
 
+/* This class is utilized to style the button container on the homepage and haircuts page */
 .appointment-container {
     margin-top: 5em;
     font-size: 1.3em;
     text-align: center;
 }
 
+/* custom button styling to match color theme */
 .btn {
     transition: .3s;
     box-shadow: #F1c376 4px 4px 4px;
@@ -78,7 +88,7 @@ img:hover {
 }
 
 
-
+/* Menu styling  */
 .table-container {
     color: aliceblue;
     font-family: sans-serif;
@@ -96,7 +106,6 @@ img:hover {
 
 
 
-
 .form-container {
     padding: 25px;
     background-color: rgba(255, 255, 255, 0.299);
@@ -107,15 +116,16 @@ img:hover {
     height: fit-content;
 }
 
-textarea {
+/* textarea {
     color: black;
     width: 100%;
     border-radius: 10px;
-}
+} */
+
+
 
 .form-buttons {
     text-align: center;
-
 }
 
 
@@ -125,7 +135,6 @@ textarea {
     padding: 30px;
     text-align: center;
     margin-top: 100px;
-
 }
 
 .socials {
