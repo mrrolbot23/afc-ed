@@ -19,6 +19,7 @@ body {
     height: 100vh;
     background: url(./assets/barbershop.jpeg) no-repeat center fixed;
     background-size:cover;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
 
