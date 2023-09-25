@@ -4,10 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
 body {
     font-family: 'Cinzel', serif;
     color: #F1C376;
-    height: 110vh;
+    height: 100vh;
     background: url(./assets/barbershop.jpeg) no-repeat center fixed;
     background-size:cover;
     backdrop-filter: blur(10px);
@@ -15,7 +18,7 @@ body {
 
 
 .navbar-brand {
-    width: 80px;
+    width: 50px;
 }
 
 .nav-link {
@@ -28,28 +31,28 @@ body {
 }
 
 h1 {
-    font-size: 4.7rem;
+    font-size: 4.5rem;
 }
 
 h2 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
 }
 
 h1, h2 {
     text-align: center;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 30px;
 
 }
 
 .img-container {
-    width: 90%;
+    width: 28%;
     text-align: center;
     margin: auto;
 }
 
 img {
-    width: 70%;
+    width: 100%;
     transition: .6s;
 }
 
@@ -58,6 +61,7 @@ img:hover {
 }
 
 .appointment-container {
+    margin-top: 5em;
     font-size: 1.3em;
     text-align: center;
 }
@@ -73,9 +77,13 @@ img:hover {
     background-color: #F1C376;
 }
 
+
+
 .table-container {
+    color: aliceblue;
+    font-family: sans-serif;
     background-color: rgba(255, 255, 255, 0.299);
-    box-shadow: 8px 8px 8px ;
+    box-shadow: #F1C376 8px 8px 8px ;
     padding: 40px;
     width: 90%;
     margin: 25px auto;
@@ -83,10 +91,7 @@ img:hover {
 }
 
 .table {
-    text-align: center;
     color: aliceblue;
-    font-family: sans-serif;
-    
 }
 
 
@@ -97,8 +102,9 @@ img:hover {
     background-color: rgba(255, 255, 255, 0.299);
     box-shadow: 8px 8px 8px ;
     border-radius: 10px;
-    margin: 80px auto;
-    width: 85%;
+    margin: 10px auto;
+    width: 80%;
+    height: fit-content;
 }
 
 textarea {
@@ -112,14 +118,29 @@ textarea {
 
 }
 
-.review {
-    padding-bottom: 100px;
-}
+
 
 .footer {
     color: aliceblue;
     padding: 30px;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 100px;
+
+}
+
+.socials {
+    padding: 2em;
+}
+
+.socials i {
+    font-size: 1.5em;
+    width: 1.2em;
+}
+
+/* This media query is only used to control the blur background effect */
+
+@media only screen and (max-width: 800px ) {
+    body {
+        height: fit-content;
+    }
 }
