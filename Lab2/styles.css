@@ -121,6 +121,10 @@ img:hover {
     text-align: center;
 }
 
+.button-form {
+    margin: 1em;
+}
+
 
 /* Footer section */
 .footer {
