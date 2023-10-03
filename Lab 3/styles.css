@@ -149,6 +149,8 @@ img:hover {
 
 .slider-wrapper {
     color: aliceblue;
+    box-shadow: #f1c47698 10px 8px 8px ;
+    border-radius: 10px;
     margin: 1rem auto;
     position: relative;
     overflow: hidden;
@@ -213,6 +215,8 @@ img:hover {
   
 
   .haircut-details img {
+    box-shadow: #f1c47698 10px 8px 8px ;
+    border-radius: 10px;
       margin: auto;
       width: 20%;
       margin-bottom: 2em;
