@@ -1,104 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cutz Menu</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/ac1a2e3a6b.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ac1a2e3a6b.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body id="menu">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="menu">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/barbershop-logo.png" alt="Logo" class="d-inline-block align-text-top">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./haircuts.html">Haircut Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./hiring.html">Join Our Team</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/barbershop-logo.png"
+            alt="Logo"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./haircuts.html">Haircut Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./hiring.html">Join Our Team</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-<!-- Sub-header -->
+      </div>
+    </nav>
+    <!-- Sub-header -->
     <h2>Cutz Menu</h2>
     <!-- Table Container -->
-    <div class="table-container">
-      <div class=" table-responsive-sm">
+    <!-- <div class="table-container">
+      <div class="table-responsive-sm">
         <table class="table table-hover align-middle">
-            <thead style="text-align: center;">
-              <tr style="color: #F1C376;">
-                <th scope="col">Haircut</th>
-                <th scope="col">Description</th>
-                <th scope="col">Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="col-sm-2">
-                <td>Low-Fade</td>
-                <td>Hair length gradually becomes shorter on the sides and the fade effect continues around your head.</td>
-                <td>$30</td>
-              </tr>
-              <tr>
-                <td>Mid-Fade</td>
-                <td>The tapering begins above the eyebrow level and gets blurred out between the temple and ears.</td>
-                <td>$30</td>
-              </tr>
-              <tr>
-                <td>Flattop</td>
-                <td>One kind of short haircut where the top of the head resembles a flat.</td>
-                <td>$25</td>
-              </tr>
-              <tr>
-                <td>Bowl Cut</td>
-                <td>Haircut where the front hair is cut with a straight fringe and the rest of the hair is left longer.</td>
-                <td>$15</td>
-              </tr>
-              <tr>
-                <td>Comb Over</td>
-                <td>Hairstyle commonly worn by balding men in which the hair is grown long and combed over the bald area.</td>
-                <td>$40</td>
-              </tr>
-            </tbody>
-          </table>
-    </div>
-    </div>
-    
+          <thead style="text-align: center">
+            <tr style="color: #f1c376">
+              <th scope="col">Haircut</th>
+              <th scope="col">Description</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="col-sm-2">
+              <td>Low-Fade</td>
+              <td>
+                Hair length gradually becomes shorter on the sides and the fade
+                effect continues around your head.
+              </td>
+              <td>$30</td>
+            </tr>
+            <tr>
+              <td>Mid-Fade</td>
+              <td>
+                The tapering begins above the eyebrow level and gets blurred out
+                between the temple and ears.
+              </td>
+              <td>$30</td>
+            </tr>
+            <tr>
+              <td>Flattop</td>
+              <td>
+                One kind of short haircut where the top of the head resembles a
+                flat.
+              </td>
+              <td>$25</td>
+            </tr>
+            <tr>
+              <td>Bowl Cut</td>
+              <td>
+                Haircut where the front hair is cut with a straight fringe and
+                the rest of the hair is left longer.
+              </td>
+              <td>$15</td>
+            </tr>
+            <tr>
+              <td>Comb Over</td>
+              <td>
+                Hairstyle commonly worn by balding men in which the hair is
+                grown long and combed over the bald area.
+              </td>
+              <td>$40</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> -->
+    <section class="slider-wrapper">
+      <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+      <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+      <ul class="slides-container" id="slides-container">
+        <li class="slide row">
+          <div class="haircut-details">
+            <img
+              src="https://i.pinimg.com/originals/9f/18/12/9f181219b08ba7a53a8bae7d6fb8e690.jpg"
+              alt=""
+            />
+            <h4>Low-Fade</h4>
+            <p>
+              Hair length gradually becomes shorter on the sides and the fade
+              effect continues around your head.
+            </p>
+            <h4>$30</h4>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="haircut-details">
+            <img
+              src="https://i.pinimg.com/1200x/b5/b5/46/b5b546aa154bcae9249e7cbfcdb471c6.jpg"
+              alt=""
+            />
+            <h4>Mid-Fade</h4>
+            <p>
+              The tapering begins above the eyebrow level and gets blurred out
+              between the temple and ears.
+            </p>
+            <h4>$30</h4>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="haircut-details">
+            <img
+              src="https://live.staticflickr.com/8279/8701122406_4b727b60a5_b.jpg"
+              alt=""
+            />
+            <h4>Flattop</h4>
+            <p>
+              One kind of short haircut where the top of the head resembles a
+              flat.
+            </p>
+            <h4>$25</h4>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="haircut-details">
+            <img
+              src="https://i.pinimg.com/originals/ed/3c/e9/ed3ce9e3610185d1e5a246a52066d801.png"
+              alt=""
+            />
+            <h4>Bowl Cut</h4>
+            <p>
+              Haircut where the front hair is cut with a straight fringe and
+              the rest of the hair is left longer.
+            </p>
+            <h4>$10</h4>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="haircut-details">
+            <img
+              src="https://i.pinimg.com/750x/74/17/4f/74174faba53f8ab3627726dbb54c632c.jpg"
+              alt=""
+            />
+            <h4>Comb Over</h4>
+            <p>
+              Hairstyle commonly worn by balding men in which the hair is
+                grown long and combed over the bald area.
+            </p>
+            <h4>$200</h4>
+          </div>
+        </li>
+      </ul>
+    </section>
+
     <div class="appointment-container review">
       <p>Please leave a riview.</p>
-      <button class="btn btn-lg btn-light"><i class="fa-brands fa-yelp"></i> Yelp</button>
+      <button class="btn btn-lg btn-light">
+        <i class="fa-brands fa-yelp"></i> Yelp
+      </button>
     </div>
-    <footer style="height: 10%;">
+    <footer style="height: 10%">
       <div class="footer">
         <p>&copy; Mr. Rolbot 2023</p>
       </div>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts.js"></script>
+  </body>
 </html>
