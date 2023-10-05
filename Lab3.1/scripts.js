@@ -1,3 +1,4 @@
+// Array of objects that will be used to display our menu content through DOM manipulation
 const cutsMenu = [
   {
     name: "Low Fade",
@@ -36,6 +37,7 @@ const cutsMenu = [
   },
 ];
 
+// This is the content that will load initially
 let counter = 0;
 
 document.querySelector(".haircut_name").innerHTML = `${cutsMenu[counter].name}`;
@@ -49,11 +51,16 @@ document.querySelector(".price").innerHTML = new Intl.NumberFormat("en-EN", {
 document
   .querySelector(".haircut_image img")
   .setAttribute("src", `${cutsMenu[counter].url}`);
+document
+  .querySelector(".haircut_image img")
+  .setAttribute("alt", `${cutsMenu[counter].name}`);
 
+// This variables were made to have a cleaner function below
 const previousBtn = document.getElementById("prev-button");
 
 const nextBtn = document.getElementById("next-button");
 
+// Function for the menu button "Next"
 const next = () => {
   counter++;
   while (counter > cutsMenu.length - 1) {
@@ -72,8 +79,12 @@ const next = () => {
   document
     .querySelector(".haircut_image img")
     .setAttribute("src", `${cutsMenu[counter].url}`);
+  document
+    .querySelector(".haircut_image img")
+    .setAttribute("alt", `${cutsMenu[counter].name}`);
 };
 
+// Function for the menu button "Prev"
 const previous = () => {
   counter--;
 
@@ -94,7 +105,11 @@ const previous = () => {
   document
     .querySelector(".haircut_image img")
     .setAttribute("src", `${cutsMenu[counter].url}`);
+  document
+    .querySelector(".haircut_image img")
+    .setAttribute("alt", `${cutsMenu[counter].name}`);
 };
 
+// Event Listeners for both menu buttons
 nextBtn.addEventListener("click", next);
 previousBtn.addEventListener("click", previous);
