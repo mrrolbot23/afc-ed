@@ -42,12 +42,13 @@ document.querySelector(".haircut_name").innerHTML = `${cutsMenu[counter].name}`;
 document.querySelector(
   ".cut-description"
 ).innerHTML = `${cutsMenu[counter].description}`;
-document.querySelector(".price").innerHTML = `$${cutsMenu[counter].price}`;
+document.querySelector(".price").innerHTML = new Intl.NumberFormat("en-EN", {
+  style: "currency",
+  currency: "USD",
+}).format(cutsMenu[counter].price);
 document
   .querySelector(".haircut_image img")
   .setAttribute("src", `${cutsMenu[counter].url}`);
-
-// document.querySelector(".haircut_name").innerHTML = `${cutsMenu[0].haircut1.name}`
 
 const previousBtn = document.getElementById("prev-button");
 
@@ -64,7 +65,10 @@ const next = () => {
   document.querySelector(
     ".cut-description"
   ).innerHTML = `${cutsMenu[counter].description}`;
-  document.querySelector(".price").innerHTML = `$${cutsMenu[counter].price}`;
+  document.querySelector(".price").innerHTML = new Intl.NumberFormat("en-EN", {
+    style: "currency",
+    currency: "USD",
+  }).format(cutsMenu[counter].price);
   document
     .querySelector(".haircut_image img")
     .setAttribute("src", `${cutsMenu[counter].url}`);
@@ -83,7 +87,10 @@ const previous = () => {
   document.querySelector(
     ".cut-description"
   ).innerHTML = `${cutsMenu[counter].description}`;
-  document.querySelector(".price").innerHTML = `$${cutsMenu[counter].price}`;
+  document.querySelector(".price").innerHTML = new Intl.NumberFormat("en-EN", {
+    style: "currency",
+    currency: "USD",
+  }).format(cutsMenu[counter].price);
   document
     .querySelector(".haircut_image img")
     .setAttribute("src", `${cutsMenu[counter].url}`);
