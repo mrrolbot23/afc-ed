@@ -125,6 +125,7 @@
           <div class="col-md-4">
             <label for="inputState" class="form-label">State</label>
             <select id="inputState" class="form-select required" onkeyup="enableSubmit()" required>
+
               <optgroup label="State">
                 <option value="TX">TX</option>
                 <option value="CA">CA</option>
@@ -142,8 +143,8 @@
           </div>
           <div class="col-12">
             <p>Married:</p>
-            <div class="col-lg-4 col-md-2" style="display: block">
-              <label for="married" style="display: block">
+            <div class="col-lg-4 col-md-2" style="display: inline">
+              <label for="married" style="display: inline">
                 <input
                   type="radio"
                   name="martial-status-answer"
@@ -154,7 +155,7 @@
                 Married
               </label>
 
-              <label for="single" style="display: block">
+              <label for="single" style="display: inline">
                 <input
                   type="radio"
                   name="martial-status-answer"
@@ -165,8 +166,7 @@
                 />
                 Single
               </label>
-
-              <label for="complicated" style="display: block">
+              <label for="complicated" style="display: inline">
                 <input
                   type="radio"
                   name="martial-status-answer"
@@ -186,7 +186,7 @@
           </div>
         </form>
       </div>
-      <div class="appointment-table col-lg-6 col-sm-12">
+      <div class="roster-table col-lg-6 col-sm-12">
         <table class="table table-dark table-hover" id="emp-table">
           <thead>
             <tr class="employee">
