@@ -1,0 +1,150 @@
+/* The color theme used on the app is to match the logo color palette */
+
+/* Google Fonts import */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body settings */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    height: 100%;
+    background: linear-gradient(135deg,rgb(11, 48, 135), rgb(85, 36, 8)) fixed center no-repeat;
+    background-size: 100%;
+
+}
+
+/* Navbar settings */
+.navbar-brand img{
+    width: 3em;
+}
+
+.nav-link {
+    color: aliceblue;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    color: #cd6215;
+}
+
+/* Header settings */
+
+ h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 1em auto 1em;
+    padding-top: 3rem;
+    text-shadow: #ac5631 4px 4px 4px;
+
+}
+
+.form-list-container {
+    width: 90vw;
+    margin: auto;
+}
+
+.appt-form-ctn {
+    background-color: rgba(240, 248, 255, 0.134);
+    padding: 2em;
+    border-radius: 10px;
+    border: aliceblue 1px solid;
+
+}
+
+.appointment-table {
+    background-color: rgba(240, 248, 255, 0.134);
+    border: #b46848 1px solid;
+    border-radius: 10px;
+
+}
+
+
+
+/* custom button styling to match color theme */
+.btn {
+    transition: .3s;
+    box-shadow: #b46848 4px 4px 4px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    
+    background-color: #F1C376;
+}
+
+
+.table {
+    margin: 1em auto;
+    border-radius: 10px;
+}
+
+.fa-trash-can {
+    cursor: pointer;
+    color: #ac5631;
+    padding-left: 1em;
+}
+
+
+
+.form-buttons {
+    text-align: center;
+}
+
+.button-form {
+    margin: 1em;
+}
+
+
+/* Footer section */
+.footer {
+    color: aliceblue;
+    padding: 30px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+/* This media query is only used to control the blur background effect */
+
+@media only screen and (max-width: 850px ) {
+    #hiring {
+        height: 100%;
+    }
+
+    #menu, #home {
+        height: 100vh;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px ) {
+    #menu, #home {
+        height: 100%;
+    }
+    .menu-container {
+        display: block;
+        width: 90vw;
+    }
+
+    .haircut_image {
+        width: 100%;
+    }
+
+    .haircut-description {
+        margin: 1em auto;
+        width: fit-content;
+        
+    }
+
+}
