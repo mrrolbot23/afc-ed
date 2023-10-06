@@ -51,7 +51,7 @@ body {
 
 /* Form Styling settings */
 .form-list-container {
-    width: 90vw;
+    width: 92vw;
     margin: auto;
 }
 
@@ -93,11 +93,12 @@ body {
 .table {
     margin: 1em auto;
     border-radius: 10px;
+    background: none;
 }
 
 .fa-trash-can {
     cursor: pointer;
-    color: #ac5631;
+    color: #ce5622;
     padding-left: 1em;
 }
 
