@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(21, 152, 149), rgb(0, 43, 91)) center fixed no-repeat;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1045%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1046%26quot%3b)'%3e%3c/rect%3e%3cpath d='M405.1225071933932-3.0793212306847195L326.4824194026293 42.32355462440862 371.88529525772265 120.9636424151725 450.5253830484865 75.56076656007914z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1000.11%2c353.569C1046.435%2c355.52%2c1090.441%2c331.789%2c1114.41%2c292.099C1139.21%2c251.033%2c1144.682%2c197.938%2c1118.289%2c157.878C1093.812%2c120.726%2c1044.601%2c118.509%2c1000.11%2c118.612C955.876%2c118.714%2c905.638%2c120.495%2c882.871%2c158.42C859.689%2c197.036%2c878.156%2c244.519%2c901.351%2c283.127C923.67%2c320.277%2c956.809%2c351.745%2c1000.11%2c353.569' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M580.34%2c567.968C619.114%2c569.291%2c663.397%2c563.14%2c681.669%2c528.915C699.377%2c495.746%2c677.286%2c457.68%2c655.629%2c426.944C637.905%2c401.789%2c611.112%2c385.263%2c580.34%2c385.106C549.279%2c384.947%2c520.739%2c400.194%2c503.706%2c426.168C484.674%2c455.191%2c473.817%2c491.853%2c490.318%2c522.386C507.457%2c554.1%2c544.312%2c566.739%2c580.34%2c567.968' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M811.5879956020443 193.51067216456323L984.8518103980691 267.25175301434865 967.6457338227059 103.54686964908117z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1249.8326779540314 453.57547278937255L1173.9291025007446 392.1099693248885 1112.4635990362606 468.01354477817523 1188.3671744895473 529.4790482426592z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1258.8715635121337 478.2941572611436L1307.0791135628451 635.973948575219 1464.7589048769205 587.7663985245074 1416.551354826209 430.0866072104321z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1045'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1046'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 116%2c 158%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#container {
+    border: none;
+    box-shadow: rgba(58, 58, 58, 0.467) 8px 8px 8px;
+    max-width: 400px;
+    margin: 2em auto;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(0, 43, 91);
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+    text-transform: uppercase;
+}
+
+input {
+    background-color: #f7f7f7;
+    padding: 13px;
+    width: 100%;
+    border: none;
+}
+
+input:focus {
+    border: orange 2px solid;
+    outline: none;
+    background-color: #9999;
+    color: aliceblue;
+}
+
+ul {
+    list-style: none;
+
+
+}
+
+li {
+    line-height: 2.5em;
+    padding-left: 1em;
+    word-wrap: break-word;
+}
+
+span {
+    background-color: rgb(171, 0, 0);
+    color: white;
+    height: 2.5em;
+    opacity: 0;
+    padding: 3px 15px;
+    margin: 0 0 0 20px;
+    float: right;
+    transition: .4s linear;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+li:hover span {
+    opacity: 1;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: orange;
+}
