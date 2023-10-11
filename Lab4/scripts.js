@@ -1,115 +1,100 @@
-// Array of objects that will be used to display our menu content through DOM manipulation
-const employees = [
-  {
-    fName: "Mark",
-    lNmae: "Otto",
-    state: "TX",
-    isMarried: "S",
-  },
-  {
-    fName: "John",
-    lNmae: "William",
-    state: "FL",
-    isMarried: "M",
-  },
-  {
-    fName: "Hector",
-    lNmae: "Lavoe",
-    state: "CA",
-    isMarried: "C",
-  },
+var employeeArr = [
+    {
+        fName: "Edwin",
+        lName: "Roldan",
+        state: "PR",
+        isMarried: "M",
+    },
+    {
+        fName: "Mark",
+        lName: "Otto",
+        state: "TX",
+        isMarried: "S",
+    },
+    {
+        fName: "John",
+        lName: "William",
+        state: "FL",
+        isMarried: "M",
+    },
+    {
+        fName: "Hector",
+        lName: "Lavoe",
+        state: "CA",
+        isMarried: "C",
+    },
 ];
-
-let empTable = document.getElementById("emp-table");
-
-//This function adds the 3 employees from the emplyees table
-const loadEmployees = () => {
-  for (let i = 0; i < employees.length; i++) {
-    let row = empTable.insertRow(i + 1);
-    let cell1 = row.insertCell(0);
-    let cell2 = row.insertCell(1);
-    let cell3 = row.insertCell(2);
-    let cell4 = row.insertCell(3);
-    let cell5 = row.insertCell(4);
-
-    cell1.innerHTML = `<i id="delete${i}" class="fa-regular fa-trash-can"></i>`;
-    cell2.innerHTML = `${employees[i].fName}`;
-    cell3.innerHTML = `${employees[i].lNmae}`;
-    cell4.innerHTML = `${employees[i].state}`;
-    cell5.innerHTML = `${employees[i].isMarried}`;
-  }
-};
-
-//This variable will detect how many trash-can icons are present
-let trashCans = document.getElementsByClassName("fa-trash-can");
-
-//This function adds the delete functionality to trash-can icons
-const deleteFunction = () => {
-  for (let i = 0; i < trashCans.length; i++) {
-    document.getElementById("delete" + i).addEventListener("click", () => {
-      document.getElementById("emp-table").deleteRow(i + 1);
-    });
-  }
-};
-
-//We select the radio inputs from marital status and select the one is checked when submitting the form
-let maritalStatus = document.getElementsByName("martial-status-answer");
-const selectChecked = () => {
-  let maritalStatusValue;
-  for (i = 0; i < maritalStatus.length; i++) {
-    if (maritalStatus[i].checked == true) {
-      maritalStatusValue = maritalStatus[i].value;
+var employeeTable = document.getElementById("emp-table");
+var loadEmployee = function () {
+    for (var i = 0; i < employeeArr.length; i++) {
+        var row = employeeTable.insertRow(i + 1);
+        var cell0 = row.insertCell(0);
+        var cell1 = row.insertCell(1);
+        var cell2 = row.insertCell(2);
+        var cell3 = row.insertCell(3);
+        var cell4 = row.insertCell(4);
+        cell0.innerHTML = "<i id=\"delete".concat(i, "\" class=\"fa-regular fa-trash-can\"></i>");
+        cell1.innerHTML = "".concat(employeeArr[i].fName);
+        cell2.innerHTML = "".concat(employeeArr[i].lName);
+        cell3.innerHTML = "".concat(employeeArr[i].state);
+        cell4.innerHTML = "".concat(employeeArr[i].isMarried);
     }
-  }
-  return maritalStatusValue;
 };
-
-const submitBtn = document.getElementById("submit");
-
-//This function adds employees on form submission
-const addEmployee = () => {
-  let firstName = document.getElementById("inputFName").value;
-  let lastName = document.getElementById("inputLName").value;
-  let state = document.getElementById("inputState").value;
-
-  let lastRow = trashCans.length + 1;
-  let row = empTable.insertRow(lastRow);
-  let cell1 = row.insertCell(0);
-  let cell2 = row.insertCell(1);
-  let cell3 = row.insertCell(2);
-  let cell4 = row.insertCell(3);
-  let cell5 = row.insertCell(4);
-
-  cell1.innerHTML = `<i id="delete${trashCans.length}" class="fa-regular fa-trash-can"></i>`;
-  cell2.innerHTML = `${firstName}`;
-  cell3.innerHTML = `${lastName}`;
-  cell4.innerHTML = `${state}`;
-  cell5.innerHTML = `${selectChecked()}`;
-  document.form.reset();
-};
-
-loadEmployees();
-deleteFunction();
-
-//This function will enable the submit button after the minimum required input fields are filled.
-//It will prevent the event listener to submit blank inputs
-
-const enableSubmit = () => {
-  let inputs = document.getElementsByClassName("required"); // Enter your class name for a required field, this should also be reflected within your form fields.
-  let btn = document.getElementById("submit");
-  let isValid = true;
-  for (var i = 0; i < inputs.length; i++) {
-    let changedInput = inputs[i];
-    if (changedInput.value.trim() === "" || changedInput.value === null) {
-      isValid = false;
-      break;
+var trashCans = document.getElementsByTagName("i");
+var deleteRow = function () {
+    var _loop_1 = function (i) {
+        trashCans[i].addEventListener("click", function () {
+            document
+                .getElementById("delete" + i)
+                .parentElement.parentElement.remove();
+        });
+    };
+    for (var i = 0; i < trashCans.length; i++) {
+        _loop_1(i);
     }
-  }
-  btn.disabled = !isValid;
 };
-
-//submit button event listener
-submitBtn.addEventListener("click", () => {
-  addEmployee();
-  deleteFunction();
+var maritalStatus = document.getElementsByName("martial-status-answer");
+var selectMaritalStatus = function () {
+    var maritalStatusValue;
+    for (var i = 0; i < maritalStatus.length; i++) {
+        var status_1 = maritalStatus[i];
+        if (status_1.checked == true) {
+            maritalStatusValue = status_1.value;
+        }
+    }
+    return maritalStatusValue;
+};
+var addEmployee = function () {
+    var _a, _b, _c;
+    var userForm = document.getElementById("user-form");
+    var firstName = (_a = document.getElementById("inputFName")) === null || _a === void 0 ? void 0 : _a.value;
+    var lastName = (_b = document.getElementById("inputLName")) === null || _b === void 0 ? void 0 : _b.value;
+    var state = (_c = document.getElementById("inputState")) === null || _c === void 0 ? void 0 : _c.value;
+    var row = employeeTable.insertRow(trashCans.length + 1);
+    row.insertCell(0).innerHTML = "<i id=\"delete".concat(trashCans.length, "\" class=\"fa-regular fa-trash-can\"></i>");
+    row.insertCell(1).innerHTML = "".concat(firstName);
+    row.insertCell(2).innerHTML = "".concat(lastName);
+    row.insertCell(3).innerHTML = "".concat(state);
+    row.insertCell(4).innerHTML = "".concat(selectMaritalStatus());
+    userForm.reset();
+};
+var enableSubmit = function () {
+    var requiredInputs = document.getElementsByClassName("required");
+    var btn = document.getElementById("submit");
+    var isValid = true;
+    for (var i = 0; i < requiredInputs.length; i++) {
+        var changedInput = requiredInputs[i];
+        if (changedInput.value.trim() === "" || changedInput.value === null) {
+            isValid = false;
+            break;
+        }
+    }
+    btn.disabled = !isValid;
+};
+var submitBtn = document.getElementById("submit");
+loadEmployee();
+deleteRow();
+submitBtn.addEventListener("click", function () {
+    addEmployee();
+    deleteRow();
 });
