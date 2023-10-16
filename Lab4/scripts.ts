@@ -56,9 +56,7 @@ let trashCans: HTMLCollectionOf<Element> = document.getElementsByTagName("i");
 const deleteRow = (): void => {
   for (let i = 0; i < trashCans.length; i++) {
     trashCans[i].addEventListener("click", () => {
-      document
-        .getElementById("delete" + i)
-        .parentElement.parentElement.remove();
+      document.getElementById("delete" + i).parentElement.parentElement.remove();
     });
   }
 };
@@ -98,6 +96,8 @@ const addEmployee = ():void => {
   row.insertCell(4).innerHTML = `${selectMaritalStatus()}`
 
   userForm.reset();
+
+  deleteRow();
 };
 
 const enableSubmit = ():void => {
@@ -123,6 +123,6 @@ deleteRow();
 
 submitBtn.addEventListener("click", () => {
   addEmployee();
-  deleteRow();
+ 
 })
 

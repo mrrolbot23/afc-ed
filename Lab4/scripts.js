@@ -77,6 +77,7 @@ var addEmployee = function () {
     row.insertCell(3).innerHTML = "".concat(state);
     row.insertCell(4).innerHTML = "".concat(selectMaritalStatus());
     userForm.reset();
+    deleteRow();
 };
 var enableSubmit = function () {
     var requiredInputs = document.getElementsByClassName("required");
@@ -96,5 +97,4 @@ loadEmployee();
 deleteRow();
 submitBtn.addEventListener("click", function () {
     addEmployee();
-    deleteRow();
 });
