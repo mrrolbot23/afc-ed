@@ -1,0 +1,15 @@
+{
+  "name": "no-yes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yes-no": "^0.0.1",
+    "yes-no-words": "^2.0.0"
+  }
+}
