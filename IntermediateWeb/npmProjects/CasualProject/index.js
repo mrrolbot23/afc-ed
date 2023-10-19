@@ -1,5 +1,7 @@
+// Import "casual" package
 const casual = require("casual");
 
+// Display the below statement with random name, country, phone number, address, and month.
 console.log(`Hello there ${casual.name}!
 How was your trip to ${casual.country}?
 I sure hope you had a wonderful time.

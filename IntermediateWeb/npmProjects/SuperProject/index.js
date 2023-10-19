@@ -1,3 +1,4 @@
+// Import "marvel-characters" package
 const marvel = require("marvel-characters");
 
 // Display a random character in the terminal Task # 3.8.a

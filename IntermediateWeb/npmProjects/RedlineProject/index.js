@@ -1,5 +1,7 @@
+// Import "readline-sync" package
 const readLineSync = require("readline-sync");
 
+// Display welcome message
 console.log("Welcome!");
 
 // Task # 4. Ask three questions
@@ -15,7 +17,7 @@ console.log(
 );
 
 
-// Part 2
+// Part 2 of the Project
 console.log("-----------------------Part 2-------------------------");
 
 const spicyTacos = () => {
