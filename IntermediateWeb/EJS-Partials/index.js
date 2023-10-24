@@ -28,7 +28,7 @@ app.get("/form", (req, res) => {
 });
 
 app.get("/submitData", (req, res) => {
-  console.log(req.query)
+  console.log(req.query);
   res.send("Submitted");
 });
 
@@ -38,8 +38,9 @@ app.post("/submitData", (req, res) => {
 });
 
 app.get("/search", (req, res) => {
-  res.send(req.query)
-})
+  res.send(req.query);
+});
+
 app.listen(port, () => {
   console.log(`App running on ${port}`);
 });
