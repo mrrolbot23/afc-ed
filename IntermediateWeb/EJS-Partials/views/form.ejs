@@ -1,0 +1,25 @@
+<%- include("partials/header", {title: "Form page"}) %> <%-
+include("partials/navbar") %>
+<h1>Form Page</h1>
+<div class="form-container">
+  <form action="/submitData" method="post">
+    <label for="username"
+      >Username:
+      <input type="text" name="username" id="username" placeholder="Username" />
+    </label>
+    <label for="password">
+      Passwor:
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+    </label>
+
+    <button type="submit">Submit</button>
+    <button type="submit" formaction="/submitData" formmethod="get">Submit Get</button>
+  </form>
+</div>
+
+<%- include("partials/footer") %>
