@@ -19,6 +19,10 @@ app.get("/dex", (req,res) => {
     res.send(`My Pokedex: ${pokemonArr}`)
 })
 
+app.get("/pokemon/dex", (req, res) => {
+    console.log("testing...") 
+})
+
 app.listen(port, () => {
     console.log(`App running on port ${port}`)
 })
