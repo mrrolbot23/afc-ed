@@ -1,0 +1,12 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.image-container {
+    max-width: 400px;
+    text-align: center;
+}
