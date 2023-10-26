@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin Price</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+    <div class="bitcoin-container">
+      <h1>Bitcoin Price App</h1>
+      <form action="/pricedata" method="post" >
+        <label for="currency" style="display: inline">
+          <input
+            type="radio"
+            name="currency"
+            id="currency"
+            value="USD"
+            style="cursor: pointer"
+            checked
+            <% if (selected === "USD") { %>checked<% } %>
+          />
+          USD
+        </label>
+        <label for="currency" style="display: inline">
+          <input
+            type="radio"
+            name="currency"
+            id="currency"
+            value="GBP"
+            style="cursor: pointer"
+            <% if (selected === "GBP") { %>checked<% } %>
+          />
+          GBP
+        </label>
+        <label for="currency" style="display: inline">
+          <input
+            type="radio"
+            name="currency"
+            id="currency"
+            value="EUR"
+            style="cursor: pointer"
+            <% if (selected === "EUR") { %>checked<% } %>
+          />
+          EUR
+        </label>
+        <button type="submit">Get Price</button>
+      </form>
+      <div class="price-container">
+        <h2>This is the current price:</h2>
+        <p><%= bitcoinPrice %></p>
+      </div>
+    </div>

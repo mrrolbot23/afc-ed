@@ -1,0 +1,62 @@
+body {
+    background-color:darkcyan;
+    background: linear-gradient(135deg, rgb(0, 26, 56), rgb(13, 136, 134));
+    color:aliceblue;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Helvetica', sans-serif;
+}
+.main-container {
+    border-radius: 10px;
+    box-shadow:
+    inset 4px 4px 5px 0 rgba(255, 255, 255, .25),
+    inset -4px -4px 5px 0 rgba(0, 0, 0, 0.125),
+    0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.194),
+    rgba(255, 255, 255, 0.491), 70%, 
+    rgba(255, 255, 255, 0.181)
+  );
+}
+.bitcoin-container , footer{
+    width: 380px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    height: 4em;
+    width: 8em;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 4px 4px rgb(63, 63, 63);
+    background-color: rgb(0, 43, 91);
+    color: aliceblue;
+    cursor: pointer;
+    transition: .4s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.price-container p {
+    font-size: 3em;
+    transition:ease-out .3s;
+}
+
+.price-container p:hover {
+    transform: scale(1.12);
+}
+
+
