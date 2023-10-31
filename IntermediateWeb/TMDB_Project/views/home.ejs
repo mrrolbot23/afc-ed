@@ -1,0 +1,15 @@
+<%- include("partials/header", {title: "JumpCut"}) %>
+<%- include("partials/navbar") %>
+    <div class="home-container">
+        <h1>In the mood to catch a flick? See what movies are playing now</h1>
+        <button type="button" class="btn btn-warning"><a style="text-decoration: none ; color: black" href="/nowplaying">Show a list of Movies</a></button>
+    </div>
+    <div class="movie-carousel">
+        <ul>
+            <% for(let i = 0; i < 4; i++) { %>
+                <li><img src="https://image.tmdb.org/t/p/w500<%= movies[i].poster_path %>" alt=<%= movies[i].title %> /><p style="color: #FFC436;"><%= movies[i].title %></p></li>
+            <%} %>
+            
+        </ul>
+    </div>
+<%- include("partials/footer") %> 

@@ -1,0 +1,15 @@
+<%- include("partials/header", {title: "Search Results"}) %> <%-
+include("partials/navbar") %>
+<div class="now-playing row">
+    <% movies.forEach(movie => { %>
+        <div class="movie-card col-lg-4">
+            <img <% if (movie.poster_path === null) { %>src="./no-image.jpeg"<% } %> src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>" alt=<%= movie.title %> />
+            <h5><%= movie.title %></h5>
+            <p>
+              <%= movie.overview %>
+            </p>
+            <p style="color: #E9B824;">Rating: <%= movie.vote_average%> of 10</p>
+          </div>
+    <%}) %>
+</div>
+<%- include("partials/footer") %>
