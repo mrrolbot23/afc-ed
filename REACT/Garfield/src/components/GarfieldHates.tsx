@@ -1,7 +1,7 @@
 import {ReactNode} from "react";
 
 interface HateProps {
-  hates: ReactNode
+  hates: ReactNode;
 }
 const GarfieldHates = ({hates}: HateProps) => {
   return (
