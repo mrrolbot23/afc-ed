@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    background-color: #2b2b2b;
+    color: aliceblue;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: #747bff 8px 8px 8px;
+}
+
+.about-container {
+    width: 80vw;
+    margin: auto;
+}
