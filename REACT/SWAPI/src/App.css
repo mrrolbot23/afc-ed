@@ -1,0 +1,24 @@
+html {
+    background: url("./assets/backgroundImg.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #f9f9f9;
+    font-family: 'Helvetica', sans-serif;
+    box-sizing: border-box;
+}
+
+.header-container {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.table-container {
+    text-align: center;
+}
