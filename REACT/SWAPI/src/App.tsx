@@ -3,6 +3,7 @@ import "./App.css"
 import {FormEvent, useState} from "react";
 import axios from "axios";
 import {Button} from "@mui/material";
+
 const App = () => {
   const endpoint = "https://swapi.dev/api/people"
   const [hidden, setHidden] = useState(true)
